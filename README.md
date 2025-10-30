@@ -1,50 +1,91 @@
-# Welcome to your Expo app 👋
+RentRide — Aplikasi Manajemen Sewa Motor
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Developed by:
+Syrilus Christiano Putra Arsam
+(2301020019)
 
-## Get started
+Deskripsi Proyek
 
-1. Install dependencies
+RentRide adalah aplikasi mobile sederhana berbasis React Native (Expo) yang dirancang untuk membantu pengguna dalam mengelola data motor sewaan.
+Aplikasi ini memungkinkan pengguna untuk menambah, melihat, dan menyimpan data motor yang disewakan menggunakan AsyncStorage sebagai media penyimpanan lokal.
+
+Aplikasi ini dikembangkan dengan Expo Router untuk sistem navigasi antar halaman dan memiliki tampilan antarmuka yang sederhana dan bersih.
+
+---
+
+Fitur Utama
+
+Tambah Data Motor (Create)
+Pengguna dapat menambahkan motor baru lengkap dengan nama, jenis, dan harga sewa per hari.
+
+Tampilan Daftar Motor (Read)
+Semua data motor yang sudah disimpan akan ditampilkan di halaman utama.
+
+Penyimpanan Lokal (Local Storage)
+Data motor disimpan menggunakan `AsyncStorage`, sehingga tetap tersimpan meskipun aplikasi ditutup.
+
+Navigasi Antar Halaman
+Menggunakan Expo Router agar perpindahan antar halaman menjadi lebih mudah dan efisien.
+
+Desain Bersih & Minimalis
+Tampilan dengan background putih dan teks rata tengah agar terlihat sederhana namun profesional.
+
+Teknologi yang Digunakan
+
+| Teknologi                      | Deskripsi                                                        |
+| ------------------------------ | ---------------------------------------------------------------- |
+| ⚛️ **React Native (Expo)**     | Framework untuk membuat aplikasi mobile cross-platform.          |
+| 🧭 **Expo Router**             | Sistem navigasi berbasis file yang mudah digunakan.              |
+| 💾 **AsyncStorage**            | Media penyimpanan data lokal di perangkat.                       |
+| 💡 **TypeScript / JavaScript** | Bahasa pemrograman dengan dukungan tipe data aman dan fleksibel. |
+| 🎨 **React Native StyleSheet** | Untuk pengaturan tampilan dan styling komponen.                  |
+
+Tampilan Aplikasi (Preview)
+Page Selamat Datang
+<img width="366" height="740" alt="Page Selamat Datang" src="https://github.com/user-attachments/assets/716969fa-cca3-4fb2-86d8-f6ecda073ea2" />
+Page Fasilitas
+<img width="366" height="739" alt="Page Fasilitas" src="https://github.com/user-attachments/assets/5e108ebd-211e-4963-8ff6-9bae6481395b" />
+Page Testimoni
+<img width="362" height="725" alt="Page Testimoni" src="https://github.com/user-attachments/assets/048b8553-48e1-4c96-8bff-1c73f46ec4bf" />
+Page Pengembalian Motor
+<img width="360" height="739" alt="Page Pengembalian Motor" src="https://github.com/user-attachments/assets/5288aec7-0ce8-438a-aa20-492db820f39d" />
+Page Daftar Motor
+<img width="361" height="732" alt="Page Daftar Motor TersediaPenyewaan" src="https://github.com/user-attachments/assets/ee9696a3-72e9-48ed-bf5c-2b8e8c4d0530" />
+Form Penyewaan Motor
+<img width="358" height="739" alt="Form Penyewaan Motor" src="https://github.com/user-attachments/assets/05a5b546-cad1-42ef-a056-4f108f8c1840" />
+Notifikasi Penyewaan Berhasil
+<img width="354" height="738" alt="Notifikasi Penyewaan Berhasil" src="https://github.com/user-attachments/assets/a6c129aa-9d07-467a-b4a3-e94725f559ec" />
+Page Admin Kelola Motor
+<img width="367" height="731" alt="Page Admin Kelola Motor" src="https://github.com/user-attachments/assets/37d18535-3a95-4031-8dc2-2bb4c0c6a6b7" />
+Form Menambahkan Motor
+<img width="376" height="736" alt="Form Menambahkan Motor" src="https://github.com/user-attachments/assets/0a51047c-610a-4200-a837-270373aaf2a5" />
+Form Edit Motor
+<img width="361" height="729" alt="Form Edit Motor" src="https://github.com/user-attachments/assets/1ceb32f7-5de0-4665-be23-adef8d6914eb" />
+Bukti Penyewaan Motor
+<img width="936" height="513" alt="Bukti Penyewaan Motor" src="https://github.com/user-attachments/assets/73682131-5a2f-4d7a-aa11-46572a5195e0" />
+
+
+
+
+
+
+## ⚙️ Cara Menjalankan Aplikasi
+
+1. Clone repository:
+
+   ```bash
+   git clone https://github.com/tianarsamm/UTS_PemrogramanMobile.git
+   cd RentRide
+   ```
+2. Install dependencies:
 
    ```bash
    npm install
    ```
-
-2. Start the app
+3. Jalankan aplikasi:
 
    ```bash
    npx expo start
    ```
+4. Scan QR Code menggunakan **Expo Go** di perangkat kamu.
 
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
