@@ -124,3 +124,9 @@ Bukti Penyewaan Motor
    ```
 4. Scan QR Code menggunakan **Expo Go** di perangkat kamu.
 
+
+
+
+LINK VIDEO LOOM:
+https://www.loom.com/share/147005d1d11c49c293f80a2855d663f3
+
